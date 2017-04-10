@@ -122,9 +122,9 @@ app.get('/girls', function(req, res){
 });
 
 var options = {
-	key: fs.readFileSync('./keys/server.key'),
-	ca: [fs.readFileSync('./keys/ca.crt')],
-	cert: fs.readFileSync('./keys/server.crt')
+	// key: fs.readFileSync('./keys/server.key'),
+	// ca: [fs.readFileSync('./keys/ca.crt')],
+	// cert: fs.readFileSync('./keys/server.crt')
 };
 https.createServer(options, app).listen(3000, function(req, res){
     // res.writeHead(200);
